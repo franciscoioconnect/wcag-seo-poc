@@ -1,7 +1,7 @@
-"use client";
-import React from 'react'
+'use client';
+import React from 'react';
 import Image from 'next/image';
-import { Box, Button, Grid, IconButton, Menu, MenuItem } from '@mui/material'
+import { Box, Button, Grid, IconButton, Menu, MenuItem } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 
 import './styles.css';
@@ -24,7 +24,7 @@ const NavBar = () => {
           src="/logo.svg"
           height={60}
           width={60}
-          alt="Logo"
+          alt="Logo of the Application"
         />
         <h1 className='header-title-page'>GREEN WORLD</h1>
       </Grid>
@@ -37,8 +37,8 @@ const NavBar = () => {
         sm={6}
         sx={{ display: { xs: 'none', sm: 'flex', md: 'flex', lg: 'flex' } }}
       >
-        <Button className='button-header' variant="text" size="large" sx={{ color: '#176528' }}>CATALOG</Button>
-        <Button className='button-header' variant="text" size="large" sx={{ color: '#176528', marginLeft: 5 }}>ABOUT US</Button>
+        <Button className='button-header' variant="text" size="large" sx={{ color: '#176528' }} aria-label='Button to open the Plants Catalog'>CATALOG</Button>
+        <Button className='button-header' variant="text" size="large" sx={{ color: '#176528', marginLeft: 5 }} aria-label='Button to open the section About Us'>ABOUT US</Button>
       </Box>
       <Box
         component={Grid}
@@ -48,8 +48,8 @@ const NavBar = () => {
         sx={{ display: { xs: 'flex', sm: 'none', md: 'none', lg: 'none' } }}
       >
         <IconButton
-          aria-label="menu" 
-          size='large' 
+          aria-label="menu"
+          size='large'
           className='header-menu-icon'
           id="menu-button"
           aria-controls={open ? 'app-menu' : undefined}
@@ -74,7 +74,7 @@ const NavBar = () => {
       </Box>
 
     </Grid>
-  )
-}
+  );
+};
 
-export default NavBar
+export default NavBar;

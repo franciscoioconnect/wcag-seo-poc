@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, Grid, ThemeProvider, Typography, createTheme } from '@mui/material';
 import Image from 'next/image';
 
-import './styles.css'
+import './styles.css';
 
 const FirstSection = () => {
   return (
@@ -19,7 +19,7 @@ const FirstSection = () => {
       <Grid item lg={4} xs={3} className='beige-background'>
         <div className='image-container'>
           <Image
-            src="/left-leave.png" 
+            src="/left-leave.png"
             fill
             alt="Left leave"
             className='image'
@@ -35,20 +35,15 @@ const FirstSection = () => {
       <Grid item lg={4} xs={3} className='beige-background'>
         <div className='image-container'>
           <Image
-            src="/right-leave.png" 
+            src="/right-leave.png"
             fill
             alt="Right leave"
             className='image'
           />
         </div>
       </Grid>
-      {/* <Grid item lg={12} className='first-section'>
-        
-        
-        
-      </Grid> */}
     </Grid>
-  )
-}
+  );
+};
 
-export default FirstSection
+export default FirstSection;

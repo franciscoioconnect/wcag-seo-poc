@@ -15,7 +15,7 @@ const SecondSection = () => {
       <Grid item lg={4} xs={12} className='second-section-image-container'>
         <div className='image-container'>
           <Image
-            src="/second-section.png" 
+            src="/second-section.png"
             fill
             alt="Image Second Section"
             className='image'
@@ -23,7 +23,7 @@ const SecondSection = () => {
         </div>
       </Grid>
     </Grid>
-  )
-}
+  );
+};
 
-export default SecondSection
+export default SecondSection;

@@ -2,9 +2,8 @@ import React from "react";
 import { Card, CardActionArea, CardContent, CardMedia, Typography } from "@mui/material";
 
 
-
 function MediaCard(props) {
-  const { classes, image, headline, description, isMoving } = props;
+  const { image, headline } = props;
 
   return (
     <Card className="card-container">
