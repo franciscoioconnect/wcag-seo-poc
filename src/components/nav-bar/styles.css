@@ -1,0 +1,28 @@
+.header-logo-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header-buttons-section{
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header-menu-icon{
+  color: #176528;
+}
+
+.button-header{
+  font-size: 20px;
+  &:hover {
+    background-color: #E1E5B9;
+  }
+}
+
+.header-title-page {
+  color: #176528;
+  margin-left: 1rem;
+}
