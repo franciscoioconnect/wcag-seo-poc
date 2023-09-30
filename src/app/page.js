@@ -1,4 +1,4 @@
-import FourthSection from '@/components/fourth-section'
+import FourthSection from '@/components/main-page/fourth-section'
 import Layout from '@/components/layout'
 import FirstSection from '@/components/main-page/first-section'
 import SecondSection from '@/components/main-page/second-section'
