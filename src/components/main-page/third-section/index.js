@@ -1,8 +1,5 @@
-"use client";
-import React, { useEffect, useState } from 'react';
-import Image from 'next/image';
-import { Grid, Typography } from '@mui/material';
-
+'use client';
+import React, { useEffect, useState } from 'react';import { Grid, Typography } from '@mui/material';
 import Carousel from 'react-multi-carousel';
 import Card from './card';
 import MobileDetect from 'mobile-detect';
@@ -17,28 +14,28 @@ const ThirdSection = () => {
   useEffect(() => {
     const md = new MobileDetect(navigator.userAgent);
     if (md.tablet()) {
-      setDeviceType("tablet");
+      setDeviceType('tablet');
     } else if (md.mobile()) {
-      setDeviceType("mobile");
+      setDeviceType('mobile');
     } else {
-      setDeviceType("desktop");
+      setDeviceType('desktop');
     }
   }, []);
 
   const images = [
-    "/coriander.jpeg",
-    "/bonsai.png",
-    "/chrys.jpeg",
-    "/tulip.jpeg",
-    "/pine.jpeg",
+    '/coriander.jpeg',
+    '/bonsai.png',
+    '/chrys.jpeg',
+    '/tulip.jpeg',
+    '/pine.jpeg',
   ];
 
   const texts = [
-    "Coriander",
-    "Bonsai",
-    "Chrysants",
-    "Tulip",
-    "Pine"
+    'Coriander',
+    'Bonsai',
+    'Chrysants',
+    'Tulip',
+    'Pine'
   ];
 
   const fakerData = Array(5)
@@ -97,7 +94,7 @@ const ThirdSection = () => {
 
       </Grid>
     </Grid>
-  )
-}
+  );
+};
 
-export default ThirdSection
+export default ThirdSection;

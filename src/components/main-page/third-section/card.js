@@ -7,8 +7,8 @@ function MediaCard(props) {
 
   return (
     <Card className="card-container">
-      <CardActionArea onClick={() => console.log("HEY")}>
-        <CardMedia component="img" height="300" image={image} title={headline} />
+      <CardActionArea tabIndex={-1} onClick={() => console.log("HEY")}>
+        <CardMedia component="img" height="300" image={image} title={`Image of ${headline}`} />
         <CardContent>
           <Typography variant="h5" component="h2" className="card-headline">
             {headline}
