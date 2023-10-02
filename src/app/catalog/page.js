@@ -1,10 +1,14 @@
+import CatalogComponent from '@/components/catalog-component';
+import Layout from '@/components/layout';
 import React from 'react';
 
 const page = () => {
   return (
-    <div>
-      HELLO WORLD
-    </div>
+    <Layout>
+      <main>
+        <CatalogComponent />
+      </main>
+    </Layout>
   );
 };
 
