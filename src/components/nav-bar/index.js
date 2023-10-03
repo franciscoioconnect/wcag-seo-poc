@@ -1,5 +1,6 @@
 'use client';
 import React, { useEffect } from 'react';
+import Link from 'next/link';
 import { useRouter, usePathname } from 'next/navigation';
 import Image from 'next/image';
 import { Box, Button, Grid, IconButton, Menu, MenuItem } from '@mui/material';
@@ -50,7 +51,9 @@ const NavBar = () => {
             width={60}
             alt="Logo of the Application"
           />
-          <h1 className='header-title-page'>GREEN WORLD</h1>
+          <Link className='header-link' href='/'>
+            <h1 className='header-title-page'>GREEN WORLD</h1>
+          </Link>
         </Grid>
         <Box
           component={Grid}
