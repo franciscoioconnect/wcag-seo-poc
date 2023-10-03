@@ -1,5 +1,5 @@
 'use client';
-import React, { useEffect } from 'react';
+import React from 'react';
 import Link from 'next/link';
 import { useRouter, usePathname } from 'next/navigation';
 import Image from 'next/image';
@@ -34,12 +34,9 @@ const NavBar = () => {
     router.push('/catalog');
   };
 
-  const handleAboutUsBtnClick = () => {
-    router.push('/aboutus');
-  };
-  useEffect(() => {
-    console.log(pathname);
-  }, []);
+  // const handleAboutUsBtnClick = () => {
+  //   router.push('/aboutus');
+  // };
 
   return (
     <nav>
