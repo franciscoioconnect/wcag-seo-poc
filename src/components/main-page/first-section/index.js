@@ -35,10 +35,15 @@ const FirstSection = () => {
         </div>
       </Grid>
       <Grid item lg={4} xs={6} className='first-section-text-container beige-background'>
-        {/* <div className='first-section-text-container'> */}
-          <Typography variant='h3' className='first-section-text'>Discover a new world and find the perfect plant just for you!</Typography>
-          <Button className='button-catalog' variant="contained" size="large" onClick={handleClick}>Catalog</Button>
-        {/* </div> */}
+        <Typography
+          variant='h3'
+          className='first-section-text'
+        >Discover a new world and find the perfect plant just for you!</Typography>
+        <Button
+          className='button-catalog'
+          variant="contained"
+          size="large"
+          onClick={handleClick}>Catalog</Button>
       </Grid>
       <Grid item lg={4} xs={3} className='beige-background'>
         <div className='image-container'>

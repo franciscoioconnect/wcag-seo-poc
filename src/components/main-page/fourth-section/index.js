@@ -22,7 +22,9 @@ const FourthSection = () => {
         </div>
         <div className='contact-paragraph-container'>
           <EmailIcon fontSize='medium'/>
-          <Typography className='contact-paragraph'>francisco.delgado@ioconnectservices.com</Typography>
+          <Typography
+            className='contact-paragraph'
+          >francisco.delgado@ioconnectservices.com</Typography>
         </div>
         <div className='contact-paragraph-container'>
           <PhoneIcon fontSize='medium'/>
@@ -34,7 +36,16 @@ const FourthSection = () => {
         item
         lg={6}
         md={6}
-        sx={{ display: { xs: 'none', sm: 'none', md: 'flex', lg: 'flex' }, flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}
+        sx={{
+          display: {
+            xs: 'none',
+            sm: 'none',
+            md: 'flex',
+            lg: 'flex'
+          },
+          flexDirection: 'row',
+          justifyContent: 'center',
+          alignItems: 'center' }}
       >
         <Image
           src="/logo.svg"
