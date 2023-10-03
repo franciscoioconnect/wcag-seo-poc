@@ -13,7 +13,6 @@
   color: #176528;
   font-size: 30px;
   text-align: center;
-  font-weight: bold;
 
   @media screen and (max-width: 1000px) {
     font-size: 20px;
@@ -31,7 +30,7 @@
 
 .catalog-image-container {
   /* padding: 8px; */
-  height: 400px;
+  height: 350px;
   overflow: hidden;
   border-radius: 10px;
   display: flex;

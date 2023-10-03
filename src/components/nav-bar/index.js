@@ -1,6 +1,6 @@
 'use client';
-import React from 'react';
-import { useRouter } from 'next/navigation';
+import React, { useEffect } from 'react';
+import { useRouter, usePathname } from 'next/navigation';
 import Image from 'next/image';
 import { Box, Button, Grid, IconButton, Menu, MenuItem } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -10,6 +10,7 @@ import './styles.css';
 
 const NavBar = () => {
   const router = useRouter();
+  const pathname = usePathname();
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
 
@@ -25,6 +26,7 @@ const NavBar = () => {
     // } else {
     //   handleAboutUsBtnClick();
     // }
+    // router.pathname
   };
 
   const handleCatalogBtnClick = () => {
@@ -34,6 +36,9 @@ const NavBar = () => {
   const handleAboutUsBtnClick = () => {
     router.push('/aboutus');
   };
+  useEffect(() => {
+    console.log(pathname);
+  }, []);
 
   return (
     <nav>
@@ -56,8 +61,26 @@ const NavBar = () => {
           sm={6}
           sx={{ display: { xs: 'none', sm: 'flex', md: 'flex', lg: 'flex' } }}
         >
-          <Button className='button-header' variant="text" size="large" sx={{ color: '#176528' }} aria-label='Button to open the Plants Catalog' onClick={handleCatalogBtnClick}>CATALOG</Button>
-          <Button className='button-header' variant="text" size="large" sx={{ color: '#176528', marginLeft: 5 }} aria-label='Button to open the section About Us'>ABOUT US</Button>
+          <Button
+            className={`${pathname === '/catalog' ? 'active-button-header' : 'button-header'}`}
+            variant="text"
+            size="large"
+            sx={{ color: '#176528' }}
+            aria-label='Button to open the Plants Catalog'
+            onClick={handleCatalogBtnClick}
+            aria-braillelabel='Button to open the Plants Catalog'
+          >
+            CATALOG
+          </Button>
+          <Button
+            className={`${pathname === '/aboutus' ? 'active-button-header' : 'button-header'}`}
+            variant="text"
+            size="large"
+            sx={{ color: '#176528', marginLeft: 5 }}
+            aria-label='Button to open the section About Us'
+          >
+            ABOUT US
+          </Button>
         </Box>
         <Box
           component={Grid}
@@ -87,8 +110,18 @@ const NavBar = () => {
               'aria-labelledby': 'menu-button',
             }}
           >
-            <MenuItem style={{ color: '#176528' }} onClick={() => handleMobileMenuClose('catalog')}>CATALOG</MenuItem>
-            <MenuItem style={{ color: '#176528' }} onClick={() => handleMobileMenuClose('aboutus')}>ABOUT US</MenuItem>
+            <MenuItem
+              style={{ color: '#176528' }}
+              onClick={() => handleMobileMenuClose('catalog')}
+            >
+              CATALOG
+            </MenuItem>
+            <MenuItem
+              style={{ color: '#176528' }}
+              onClick={() => handleMobileMenuClose('aboutus')}
+            >
+              ABOUT US
+            </MenuItem>
           </Menu>
         </Box>
       </Grid>
