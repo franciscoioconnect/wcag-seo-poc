@@ -1,0 +1,19 @@
+.trees-header-container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.trees-container {
+  padding: 15px;
+}
+
+.trees-header-title {
+  color: #176528;
+  font-size: 35px;
+  text-align: center;
+  font-weight: bold;
+
+  @media screen and (max-width: 1000px) {
+    font-size: 25px;
+  }
+}
