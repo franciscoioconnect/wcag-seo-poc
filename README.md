@@ -1,18 +1,42 @@
-**This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-**
+# Green World
 
-## Summary
+The work done in this section was to create an application compliant with the WCAG AA level, in order to achieve it the tool used for the validation is a Chrome Extension called Axe. With this extension one can identify the errors the developer makes in the development of the app that go against the best practices of the WCAG.
 
-This is a project created with NextJS to give an example of how to create a page compliant with the WCAG
+The project here was done in NextJS, this to also show a little of how an SSR page works.
+The design of the app was done in Figma, the designs made can be viewed in this project in the folder designs on the root level
 
-This project purpose is to pass the Level AA for the WCAG using the tool Axe
+## Objective
 
-This project is about a plant catalog where a user can browse between different categories of plants and view detailed informacion of a specific plant, tree, flower, etc.
+The main objective of this app is to show the user a catalog of plants so that he can learn more about the different categories there are and in the end choose the best option so that the user can plant it and start learning the whole experience of caring and gardening a plant. 
+
+
+The project is still WIP, however you can view the latest changes in this url https://wcag-seo-poc.vercel.app/ , so far the WCAG AA level has been accomplished with the Axe tool validation, however there is still a second part that will focus on the SEO aspect, there will also be a backend connection to display even more data than what I currently have, this will be done using Firebase to accelerate the development.
+
+
+Anyone can feel free to clone the repo and run it locally so that you can see the code and have an idea of how to achieve the WCAG standards. Any recommendation or suggestion is very much welcomed
+
+## Stack and Libraries
+
+For the stack used in this project currently is with NextJS, Material UI and libraries for the image carousel and screen size detection, the page is 100% responsive so there should be no issues in running the app regardless of the device used. The project also has eslint configured so that there is a set of rules to follow in the code development, like limit of characters per line, quotes use, spacing, etc.
+
+The deployment of the app was done with Vercel which is the most friendly way to make deployments with NextJS projects and it already has CI/CD included, that means every time we push a change in the GitHub repo the project will be redeployed with the latest commit.
+
+
+
+To learn more of the WCAG level AA you can visit this page to check the conditions needed to meet this level https://www.wuhcag.com/wcag-checklist/
+
 ## Getting Started
 
 Use Node version 18, the project was created using Node 18.16.1
 
-Then, run the development server:
+Then, install the dependencies:
+
+```bash
+npm install
+# or
+yarn
+```
+and run the development server
 
 ```bash
 npm run dev
@@ -22,18 +46,9 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-<!-- ## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details. -->
